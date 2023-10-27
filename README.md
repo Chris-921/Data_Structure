@@ -24,7 +24,7 @@ This repository is designed to provide a structured learning path for computer s
 ## Project Description
 
 #### Game 2048:
-I build the core logic of the game "2048".  (see this on-line version of 2048: https://play2048.co/ ).
+I built the core logic of the game "2048".  (see this on-line version of 2048: https://play2048.co/ ).
 
 The game itself is quite simple. It’s played on a 4*4 grid of squares, each of which can either be empty or contain a tile bearing an integer–a power of 2 greater than or equal to 2. Before the first move, the application adds a tile containing either 2 or 4 to a random square on the initially empty board. The choice of 2 or 4 is random, with a 75% chance of choosing 2 and a 25% chance of choosing 4.
 
@@ -47,6 +47,11 @@ Each time two tiles merge to form a larger tile, the player earns the number of 
 
 The “Max Score” is the maximum score the user has achieved in that game session. It isn’t updated until the game is over.
 
+#### Deques:
+
+I built implementations of a “Double Ended Queue” using both lists and arrays in a package that other classes can use. The project is roughly split into two halves: the data structure portion and the application portion.
+In the data structure part: ArrayDeque sample code.java and LinkedListDeque sample code.java
+In the application part: MaxArrayDeque sample code.java and 
 
 ---
 
