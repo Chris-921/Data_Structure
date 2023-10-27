@@ -66,6 +66,25 @@ Whereas on the right, the water in the site on the top row has no way of trickli
 
 ![Screenshot 2023-10-27 at 2 25 30 AM](https://github.com/Chris-921/Data_Structure/assets/112040075/ac644ffa-9291-4da9-8be4-76483b5fff43)
 
+Monte Carlo simulation. To estimate the percolation threshold, consider the following computational experiment:
+
+ * Initialize all sites to be blocked.
+ * Repeat the following until the system percolates:
+    Choose a site uniformly at random among all blocked sites.
+    Open the site.
+ * The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold.
+   
+For example, if sites are opened in a 20-by-20 grid according to the snapshots below, then our estimate of the percolation threshold is 204/400 = 0.51 because the system percolates when the 204th site is opened. The images correspond to the 50, 100, 150, and 204 sites being open, respectively.
+
+![Screenshot 2023-10-27 at 2 30 17 AM](https://github.com/Chris-921/Data_Structure/assets/112040075/3ef6d346-da23-4085-8d8f-8f00b681947b)
+
+By repeating this computation experiment T times and averaging the results, we obtain a more accurate estimate of the percolation threshold. Let xt be the fraction of open sites in computational experiment t. The sample mean μ provides an estimate of the percolation threshold; the sample standard deviation σ measures the sharpness of the threshold.
+
+![Screenshot 2023-10-27 at 2 36 03 AM](https://github.com/Chris-921/Data_Structure/assets/112040075/4a7e4366-5deb-4b35-b992-a3207975f7f0)
+
+Assuming T is sufficiently large (say, at least 30), the following provides a 95% confidence interval for the percolation threshold:
+
+![Screenshot 2023-10-27 at 2 36 46 AM](https://github.com/Chris-921/Data_Structure/assets/112040075/d1ce07b8-7590-450c-ae77-27a61433cabb)
 
 ---
 
