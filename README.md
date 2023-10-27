@@ -100,6 +100,18 @@ In your web browser, again open up the ngordnet_2a.html file in the static folde
 
 ![Screenshot 2023-10-27 at 3 04 32 AM](https://github.com/Chris-921/Data_Structure/assets/112040075/348d67ed-9fa0-4df4-b144-06fedf45c740)
 
+WordNet is a “semantic lexicon for the English language” that is used extensively by computational linguists and cognitive scientists; for example, it was a key component in IBM’s Watson. WordNet groups words into sets of synonyms called synsets and describes semantic relationships between them. One such relationship is the is-a relationship, which connects a hyponym (more specific synset) to a hypernym (more general synset). For example, “change” is a hypernym of “demotion”, since “demotion” is-a (type of) “change”. “ change” is in turn a hyponym of “action”, since “change” is-a (type of) “action”. A visual depiction of some hyponym relationships in English is given below:
+
+![Screenshot 2023-10-27 at 3 10 04 AM](https://github.com/Chris-921/Data_Structure/assets/112040075/ddc5e30a-d8c1-41ef-af90-2310a292f1f8)
+
+Each node in the graph above is a synset. Synsets consist of one or more words in English that all have the same meaning. For example, one synset is “jump, parachuting” , which represents the act of descending to the ground with a parachute. “jump, parachuting” is a hyponym of “descent”, since “jump, parachuting” is-a “descent”.
+
+Words in English may belong to multiple synsets. This is just another way of saying words may have multiple meanings. For example, the word “jump” also belongs to the synset “jump, leap” , which represents the more figurative notion of jumping (e.g. a jump in attendance) rather the literal meaning of jump from the other synset (e.g. a jump over a puddle). The hypernym of the synset “jump, leap” is “increase”, since “jump, leap” is-an “increase”. Of course, there are other ways to “increase” something: for example, we can increase something through “augmentation,” and thus it is no surprise that we have an arrow pointing downwards from “increase” to “augmentation” in the diagram above.
+
+Synsets may include not just words, but also what are known as collocations. You can think of these as single words that occur next to each other so often that they are considered a single word, e.g. nasal_decongestant . To avoid ambiguity, we will represent the constituent words of collocations as being separated with an underscore _ instead of the usual convention in English of separating them with spaces. For simplicity, we will refer to collocations as simply “words” throughout this document.
+
+A synset may be a hyponym of multiple synsets. For example, “actifed” is a hyponym of both “antihistamine” and “ nasal_decongestant”, since “actifed” is both of these things.
+
 ---
 
 Language: Java
