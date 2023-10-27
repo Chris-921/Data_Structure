@@ -86,6 +86,20 @@ Assuming T is sufficiently large (say, at least 30), the following provides a 95
 
 ![Screenshot 2023-10-27 at 2 36 46 AM](https://github.com/Chris-921/Data_Structure/assets/112040075/d1ce07b8-7590-450c-ae77-27a61433cabb)
 
+#### NGordnet (NGrams):
+
+I built a browser based tool for exploring the history of word usage in English texts. The front-end code is provided (in Javascript and HTML) that collects user inputs and displays outputs. This Java code will be the back end for this tool, accepting input and generating appropriate output for display.
+
+The string is a base 64 encoding of an image file. To visualize it, Google “base64 image decode”. At the time of this writing, the top search result was for a site called codebeautify.org. Copy and paste this entire string into the website and you should see a plot similar to the one shown below:
+
+![Screenshot 2023-10-27 at 3 03 33 AM](https://github.com/Chris-921/Data_Structure/assets/112040075/6806588b-2bd1-4927-8feb-e9dd9793b0f9)
+
+The string your code printed IS THE IMAGE. Keep in mind that any data can be represented as a string of bits. This website knows how to decode this string into the corresponding image, using a predefined standard.
+
+In your web browser, again open up the ngordnet_2a.html file in the static folder. With your ngordnet.main.Main class running, enter “cat, dog” into the “words” box, then click “history”. You’ll see the strange image below:
+
+![Screenshot 2023-10-27 at 3 04 32 AM](https://github.com/Chris-921/Data_Structure/assets/112040075/348d67ed-9fa0-4df4-b144-06fedf45c740)
+
 ---
 
 Language: Java
