@@ -53,6 +53,20 @@ I built implementations of a “Double Ended Queue” using both lists and array
 In the data structure part: ArrayDeque sample code.java and LinkedListDeque sample code.java
 In the application part: MaxArrayDeque sample code.java and 
 
+#### Percolation:
+I wrote a program to estimate the value of the percolation threshold via Monte Carlo simulation.(https://en.wikipedia.org/wiki/Monte_Carlo_method)
+
+Percolation. Given a composite systems comprised of randomly distributed insulating and metallic materials: what fraction of the materials need to be metallic so that the composite system is an electrical conductor? Given a porous landscape with water on the surface (or oil below), under what conditions will the water be able to drain through to the bottom (or the oil to gush through to the surface)? Scientists have defined an abstract process known as percolation to model such situations.
+
+The model. We model a percolation system using an N-by-N grid of sites. Each site is either open or blocked. A full site is an open site that can be connected to an open site in the top row via a chain of neighboring (left, right, up, down) open sites. We say the system percolates if there is a full site in the bottom row. In other words, a system percolates if we fill all open sites connected to the top row and that process fills some open site on the bottom row. (For the insulating/metallic materials example, the open sites correspond to metallic materials, so that a system that percolates has a metallic path from top to bottom, with full sites conducting. For the porous substance example, the open sites correspond to empty space through which water might flow, so that a system that percolates lets water fill open sites, flowing from top to bottom.)
+
+In the diagrams below, you can see that in the system on the left, the water is able to start in a site on the top row and trickle down through empty sites until it reaches an empty site on the bottom row.
+
+Whereas on the right, the water in the site on the top row has no way of trickling down to an open site on the bottom row.
+
+![Screenshot 2023-10-27 at 2 25 30 AM](https://github.com/Chris-921/Data_Structure/assets/112040075/ac644ffa-9291-4da9-8be4-76483b5fff43)
+
+
 ---
 
 Language: Java
